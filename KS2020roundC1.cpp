@@ -13,7 +13,7 @@ void solve(int t) {
     for (int i = 0; i < N; i++) {
         if (arr[i] == K) {
             for (int j = i + 1; j < i + K; j++) {
-                if (arr[i - 1] - arr[i] != 1) {
+                if (arr[j - 1] - arr[j] != 1) {
                     count--;
                     break;
                 }
